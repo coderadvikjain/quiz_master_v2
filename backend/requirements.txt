@@ -1,0 +1,9 @@
+Flask-JWT-Extended
+Flask-Caching redis
+flask-limiter redis
+celery
+redis
+python-dotenv
+Flask-Mail
+Werkzeug
+reportlab
