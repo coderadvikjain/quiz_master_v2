@@ -126,6 +126,8 @@ npm run serve
 
 4. To install redis server, you have to install wsl terminal (if you are on windows) or use your linux terminal,
 
+(*Follow this, to download wsl in windows* --> [To install wsl in windows: How to Install Ubuntu in WSL2 in Just 3 Steps](https://documentation.ubuntu.com/wsl/stable/howto/install-ubuntu-wsl2/))
+
 then run
 ```bash
 sudo apt install redis-server
@@ -152,8 +154,6 @@ on the terminal.
 python -m celery -A app.celery beat --loglevel=info
 ```
 on the terminal.
-
- - Follow this, to download wsl in windows --> [To install wsl in windows: How to Install Ubuntu in WSL2 in Just 3 Steps](https://documentation.ubuntu.com/wsl/stable/howto/install-ubuntu-wsl2/)
 
 <p align="right">(<a href="#readme">go to top</a>)</p>
 
