@@ -66,19 +66,94 @@ XIV. io: Ideal for generating CSV exports of user reports via APIs without savin
 
 ## Installation Guide
 
-1. To run the flask Api, create a virtual environment by using ‘python -m venv venv’ in backend folder (cd backend)
-Now, enable the created virtual environment you have, by running “venv\Scripts\activate” command on terminal.
-After creating a virtual environment, run command ‘pip install -r requirements.txt’ and then all required packages will be installed and then run “api.py” file or run using the python command ‘python api.py’ on the terminal.
-Or
-Simply, run command ‘pip install -r requirements.txt’ in backend folder (cd backend) and then all required packages will be installed. and then run “api.py” file or run using the python command ‘python api.py’ on the terminal.
-2. Now, to create ‘node_module’ folder run ‘npm install’ in frontend folder
-(cd frontend). It will install all required package.
-3. To run, the frontend, use ‘npm run serve’ on terminal in frontend folder
-(cd frontend).
-4. To install redis server use ‘sudo apt install redis-server’ in wsl terminal and then start redis by using ‘redis-server’ in wsl terminal.
-[To install wsl in windows: How to Install Ubuntu in WSL2 in Just 3 Steps]
-5. Now to run celery worker using redis, run command ‘python -m celery -A app.celery worker --loglevel=info --pool=solo’ on terminal in backend folder (cd backend).
-6. Then, to run celery beat using redis, run command ‘python -m celery -A app.celery beat --loglevel=info’ on terminal in backend folder (cd backend).
+1. To run the API, navigate to backend folder by using
+```powershell
+cd backend
+```
+then create a virtual environment using
+```powershell
+python -m venv venv
+```
+Now, activate the created virtual environment you have, by running
+```powershell
+venv\Scripts\activate
+```
+on the terminal.
+After creating a virtual environment, run command
+```powershell
+pip install -r requirements.txt
+```
+to install all required packages.
+
+Now, to run the API use
+```powershell
+python api.py
+```
+on the terminal.
+<h3><b>OR</b></h3>
+
+Simply, navigate to backend folder by using
+```powershell
+cd backend
+```
+then run
+```powershell
+pip install -r requirements.txt
+```
+to install all required packages.
+
+Now, to run the API use
+```powershell
+python api.py
+```
+on the terminal.
+
+2. Simply, navigate to frontend folder by using
+```
+cd ..
+cd frontend
+```
+Now, to downloads all required packages into ```node_modules```, run 
+```powershell
+npm install
+```
+This will install all required packages.
+
+3. To run, the frontend, use
+```powershell
+npm run serve
+```
+
+4. To install redis server, you have to install wsl terminal (if you are on windows) or use your linux terminal,
+
+then run
+```bash
+sudo apt install redis-server
+```
+Now, To start redis server, run
+```bash
+redis-server
+```
+in your wsl/linux terminal.
+
+5. Now, to run celery worker using redis, navigate back to backend folder by using
+```powershell
+cd ..
+cd backend
+```
+then run
+```powershell
+python -m celery -A app.celery worker --loglevel=info --pool=solo
+```
+on the terminal.
+
+6. Now, to execute the scheduled celery tasks using redis, run
+```powershell
+python -m celery -A app.celery beat --loglevel=info
+```
+on the terminal.
+
+ - Follow this, to download wsl in windows --> [To install wsl in windows: How to Install Ubuntu in WSL2 in Just 3 Steps](https://documentation.ubuntu.com/wsl/stable/howto/install-ubuntu-wsl2/)
 
 <p align="right">(<a href="#readme">go to top</a>)</p>
 
