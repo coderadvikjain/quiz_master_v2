@@ -1,7 +1,4 @@
-## Readme
-
- 
-  <h3 align="center">MAD2 Project </h3>
+<h3 align="center">MAD2 Project </h3>
 </div>
 
 <details>
@@ -93,10 +90,10 @@ StuiQ is a multi-user web application designed to help students prepare for vari
 
 ## Contact
 
-Jatin Nahata - 23f2001705@ds.study.iitm.ac.in
+Jatin Nahata - jatinnahatajain24@gmail.com
 
-Project Report: [Project Report](https://github.com/23f2001705/quiz_master_v2/blob/main/Project%20Report.pdf)
+Project Report: [Project Report](https://github.com/coderadvikjain/quiz_master_v2/blob/main/Project%20Report.pdf)
 
-Previous Version: [Quiz Master v1](https://github.com/23f2001705/quiz_master_v1)
+Previous Version: [Quiz Master v1](https://github.com/coderadvikjain/quiz_master_v1)
 
 <p align="right">(<a href="#readme">go to top</a>)</p>
